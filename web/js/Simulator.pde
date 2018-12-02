@@ -987,8 +987,9 @@ boolean advancedMode = false;
 
 boolean isPlayer = false;
 
-static final int WIDTH = 600;
-static final int HEIGHT = 410;
+static int COUNTER = 1;
+static int WIDTH = 1920;
+static int HEIGHT = 800;
 
 static final int edgeStroke = 2;
 static final int nodeStroke = 2;
@@ -1041,7 +1042,7 @@ JavaScript javascript;
 void setup() {
   Processing.logger = console;
 
-  size(600, 410);
+  size(WIDTH, HEIGHT);
   font = createFont("SansSerif", fontSize);
   textFont(font);
   smooth();
@@ -1297,6 +1298,7 @@ void draw() {
   stroke(0);
   strokeWeight(2);
   noFill();
+
   rect(0, 0, WIDTH, HEIGHT);
 
   if (!isPlayer) {
