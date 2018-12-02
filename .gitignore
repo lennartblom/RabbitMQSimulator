@@ -6,3 +6,4 @@ static
 config.json
 .idea
 *.iml
+package-lock.json
